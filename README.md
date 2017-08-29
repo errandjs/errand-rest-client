@@ -20,7 +20,6 @@ Notes:
 
 {
 	"tasks": [
-
 		{
 			"task": "errand-rest-client",
 			"data": {
@@ -35,7 +34,6 @@ Notes:
 				}
 			}
 		}
-
 	]
 }
 
@@ -67,9 +65,9 @@ Notes:
 						"url": "replace-with-rest-API-endpoint",
 						"index":"replace-with-key-to-use-for-upserting-results",
 						"request":{},
-                        "helpers": [
-                          { "replace": { "regexp":"\\$date", "newSubstr": "date"}}
-                        ]
+						"helpers": [
+							{ "replace": { "regexp":"\\$date", "newSubstr": "date"}}
+						]
 					}
 				}
 			}
