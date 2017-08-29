@@ -1,0 +1,31 @@
+{
+  "name": "errand-rest-client",
+  "version": "0.1.1",
+  "description": "errand component for working with rest APIs",
+  "main": "lib/errand-rest-client.js",
+  "dependencies": {
+    "async": "^2.5.0",
+    "kue": "^0.11.6",
+    "moment": "^2.18.1",
+    "mongodb": "^2.2.30",
+    "node-rest-client": "^3.1.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/errandjs/errand-rest-client.git"
+  },
+  "author": "mattcam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/errandjs/errand-rest-client/issues"
+  },
+  "keywords": [
+    "errand"
+  ],
+  "homepage": "https://github.com/errandjs/errand-rest-client#readme"
+}
