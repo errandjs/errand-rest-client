@@ -49,7 +49,7 @@ Notes:
 * **tasks[].data.request.method** - required rest client method
 * **tasks[].data.request.parameters** - required rest client method parameters, the parameter payload will vary depending on method
 
-### get.array.into.collection Example 
+### get.array.into.collection Example
 
 ```
 
@@ -82,3 +82,33 @@ Notes:
 * **tasks[].data.request.parameters.url** - use to define URL for API request.
 * **tasks[].data.request.parameters.index** - used to define key to be used for upserting results.
 * **tasks[].data.request.parameters.helpers** - used to add helpers to transform response.
+
+
+### put.array.from.collection Example
+
+```
+
+{
+	"tasks": [
+		{
+			"task": "errand-mongodb",
+			"data": {
+				"description": "replace-with-task-description",
+				"request": {
+					"database": "replace-with-mongodb-database-name",
+					"collection": "replace-with-name-of-target-collection-for-result",
+					"method": "put.array.from.collection",
+					"parameters": {
+						"url": "replace-with-rest-API-endpoint"
+					}
+				}
+			}
+		}
+	]
+}
+
+```
+
+Notes:
+
+* **tasks[].data.request.parameters.url** - use to define URL for API request.
