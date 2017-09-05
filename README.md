@@ -60,6 +60,8 @@ Notes:
 			"data": {
 				"description": "replace-with-task-description",
 				"request": {
+					"database": "replace-with-mongodb-database-name",
+					"collection": "replace-with-name-of-target-collection-for-result",
 					"method": "get.array.into.collection",
 					"parameters": {
 						"url": "replace-with-rest-API-endpoint",
