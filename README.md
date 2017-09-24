@@ -114,3 +114,34 @@ Notes:
 Notes:
 
 * **tasks[].data.request.parameters.url** - use to define URL for API request.
+
+### put.array.from.collection.withID Example
+
+```
+
+{
+	"tasks": [
+		{
+			"task": "errand-mongodb",
+			"data": {
+				"description": "replace-with-task-description",
+				"request": {
+					"database": "replace-with-mongodb-database-name",
+					"collection": "replace-with-name-of-target-collection-for-result",
+					"method": "put.array.from.collection.withID",
+					"parameters": {
+						"url": "replace-with-rest-API-endpoint-containing-{{id}}",
+						"id": "replace-with-field-to-use-as-document-id"
+					}
+				}
+			}
+		}
+	]
+}
+
+```
+
+Notes:
+
+* **tasks[].data.request.parameters.url** - use to define URL for API request, URL contains a `{{id}}` which is replaced with  **tasks[].data.request.parameters.id** value
+* **tasks[].data.request.parameters.id** - used to define document ID, most likely when working with mongodb this field will contain `_id`
